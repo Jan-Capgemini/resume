@@ -31,7 +31,7 @@
     }
 
     .bottom-container {
-      background: linear-gradient(-45deg, #e9f4f5, #7394b4);
+      background: linear-gradient(-45deg, #fafcfc, #7394b4);
       background-size: 400% 400%;
       animation: gradient 15s ease infinite;
     }
@@ -39,9 +39,11 @@
       0% {
         background-position: 0% 50%;
       }
+
       50% {
         background-position: 100% 50%;
       }
+
       100% {
         background-position: 0% 50%;
       }
@@ -51,6 +53,7 @@
       height: 150px;
       border-radius: 50%;
       margin: 10px;
+      border: 5px solid #558ec1;
     }
 
     .intro {
@@ -60,20 +63,20 @@
     }
 
     p {
+      font-size: large;
       color: black
     }
 
-    h1,
-    h3 {
+    h1, h3 {
       font-family: "Montserrat", sans-serif;
     }
 
     h1 {
-      font-size: 5rem;
+      font-size: 4rem;
     }
 
     h2 {
-      font-size: 3rem;
+      font-size: 2.5rem;
     }
 
     h3 {
@@ -81,10 +84,9 @@
       font-size: 2.5rem;
     }
 
-    a {
+    .linkedin {
       font-family: "Montserrat", sans-serif;
       color: blue;
-      text-decoration: none;
       margin: 1vw;
     }
 
@@ -128,15 +130,15 @@
 
     @media (max-width:480px) {
       h1 {
-        font-size: 3rem;
+        font-size: 2.5rem;
       }
 
       h2 {
-        font-size: 2rem;
+        font-size: 1.7rem;
       }
 
-      .intro {
-        width: 90%;
+      p {
+        width: 100%;
       }
     }
 
@@ -149,11 +151,29 @@
         font-size: 1.5rem;
       }
 
-      .intro {
+      p {
         width: 100%;
       }
     }
+
+    .btn {
+      background: #11cdd4;
+      background-image: -webkit-linear-gradient(top, #7192b4, #325675);
+      background-image: -moz-linear-gradient(top, #7192b4, #325675);
+      background-image: -ms-linear-gradient(top, #7192b4, #325675);
+      background-image: -o-linear-gradient(top, #7192b4, #325675);
+      background-image: linear-gradient(to bottom, #7192b4, #325675);
+      -webkit-border-radius: 8;
+      -moz-border-radius: 8;
+      border-radius: 8px;
+      font-family: "Montserrat", sans-serif;
+      color: #ffffff;
+      font-size: 20px;
+      padding: 10px 20px 10px 20px;
+      text-decoration: none;
+    }
   </style>
+
 </head>
 
 <body>
@@ -170,18 +190,23 @@
     <img src="./assets/images/JC.webp" class="JC">
     <h3>Hello!</h3>
     <p class="intro">
-      My name is Janek and I'm looking for my first job/intership as a frond-end
+      My name is Janek and I'm looking for my first job/intership as a frond-end
       developer.
     </p>
     <h3>About me:</h3>
     <p class="intro">
-      I graduated in French Studies but I quickly moved into IT starting my first job as a Servicedesk Agent, then
+      I graduated in French Studies but I quickly moved into IT starting my first job as a Servicedesk Agent, then
       Windows Administrator, and finally Tools Developer. Now I'm learning HTML, CSS, and JavaScript with the itention
       of creating webpages, especially their front side.
     </p>
+    <h3> Contact me!</h3>
+    <p class="contact-message">Don't hesitate to contact me should you have any job/intership offers.</p>
+    <a class="btn" href="mailto:jan.wiktor.ciszak@gmail.com">SEND AN E-MAIL</a>
   </div>
   <div class="bottom-container">
-    <a href="https://pl.linkedin.com/in/jan-ciszak-ba9224190">LinkedIn</a>
+    <a href="https://pl.linkedin.com/in/jan-ciszak-ba9224190">
+      <p class="linkedin">LinkedIn</p>
+    </a>
     <p>
       © Jan Ciszak
     </p>
