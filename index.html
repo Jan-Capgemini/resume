@@ -1,104 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Resume</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
-      crossorigin="anonymous"
-    />
-    <style>
-      body {
-        font-size: 1vw;
-        display: block;
-        color: black;
-        margin: 0;
-        text-align: center;
-        font-family: "Merriweather", serif;
-      }
-      .top-container { 
-        background-image: url("./assets/images/mountain.webp");
-        background-size: 50vw;
-        background-position: center;
-        background-repeat: no-repeat;
-        padding: 5vw;
-      }
-      .middle-container {
-        display: block;
-        align-items: center;
-        justify-content: center;
-        padding: 5vw;
-      }
-      .JC {
-        height: 10vw;
-        border-radius: 50%;
-        margin-bottom: 20px;
-      }
-      .intro {
-        width: 30vw;
-        margin: auto;  
-      }
-      p {
-        color: black
-      }
-      h1 {
-        font-size: 5vw;
-      }
-      h2 {
-        font-size: 3vw;
-        font-family: "Montserrat", sans-serif;
-      }
-      .middle-container h2 {
-        font-weight: bold;   
-      }
-      a {
-        font-family: "Montserrat", sans-serif;
-        color: 006eff;
-        text-decoration: none;
-      }
-      .bottom-container
-      {
-        background-color: #d5e8f1;
-      }
-      .bottom_cloud
-      {
-        image-resolution: 5vw
-      }
-    </style>
-  </head>
 
-  <body>
-    <div class="top-container">
-      <div class="title-text">
-        <h1>Jan Ciszak</h1>
-        <h2>Junior Tools Developer</h2>
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resume</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous" />
+
+  <style>
+    body {
+      font-size: 2rem;
+      color: black;
+      text-align: center;
+      font-family: "Merriweather", serif;
+    }
+
+    .top-container {
+      background-image: url("./assets/images/mountain.webp");
+      background-size: auto;
+      background-position: center;
+      background-repeat: no-repeat;
+      padding: 50px;
+    }
+
+    .middle-container {
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .bottom-container {
+      background: linear-gradient(-45deg, #e9f4f5, #7394b4);
+      background-size: 400% 400%;
+      animation: gradient 15s ease infinite;
+    }
+    @keyframes gradient {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    .JC {
+      height: 150px;
+      border-radius: 50%;
+      margin: 10px;
+    }
+
+    .intro {
+      width: 40%;
+      margin: auto;
+      padding-bottom: 2rem;
+    }
+
+    p {
+      color: black
+    }
+
+    h1,
+    h3 {
+      font-family: "Montserrat", sans-serif;
+    }
+
+    h1 {
+      font-size: 5rem;
+    }
+
+    h2 {
+      font-size: 3rem;
+    }
+
+    h3 {
+      font-weight: bold;
+      font-size: 2.5rem;
+    }
+
+    a {
+      font-family: "Montserrat", sans-serif;
+      color: blue;
+      text-decoration: none;
+      margin: 1vw;
+    }
+
+    @media (max-width:1200px) {
+      .intro {
+        width: 40%;
+      }
+    }
+
+    @media (max-width:1024px) {
+      .intro {
+        width: 50%;
+      }
+    }
+
+    @media (max-width:900px) {
+      .intro {
+        width: 60%;
+      }
+    }
+
+    @media (max-width:768px) {
+      .intro {
+        width: 70%;
+      }
+    }
+
+    @media (max-width:600px) {
+      h1 {
+        font-size: 4rem;
+      }
+
+      h2 {
+        font-size: 2.5rem;
+      }
+
+      .intro {
+        width: 80%;
+      }
+    }
+
+    @media (max-width:480px) {
+      h1 {
+        font-size: 3rem;
+      }
+
+      h2 {
+        font-size: 2rem;
+      }
+
+      .intro {
+        width: 90%;
+      }
+    }
+
+    @media (max-width:320px) {
+      h1 {
+        font-size: 2.2rem;
+      }
+
+      h2 {
+        font-size: 1.5rem;
+      }
+
+      .intro {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="top-container">
+    <div class="title-text">
+      <h1>Jan Ciszak</h1>
+      <h2>Junior Tools Developer</h2>
     </div>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-      crossorigin="anonymous"
-    ></script>
-    <div class="middle-container">
-      <img src="./assets/images/JC.webp" class="JC">
-        <h2>Hello!</h2>
-      <p class="intro">
-        My name is Janek and I'm looking for my first job as a frond-end
-        developer.
-      </p>
-      <h2>About me:</h2>
-      <p class="intro">
-        I graduated in French Studies but I quickly moved into IT starting my first job as a servicedesk agent with French, then TBC... .
-      </p>
-    </div>
-    <div class="bottom-container">
-      <a href="https://pl.linkedin.com/in/jan-ciszak-ba9224190">LinkedIn</a>
-      <p>
-        © Jan Ciszak
-      </p>
-      </div>
-  </body>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+  <div class="middle-container">
+    <img src="./assets/images/JC.webp" class="JC">
+    <h3>Hello!</h3>
+    <p class="intro">
+      My name is Janek and I'm looking for my first job/intership as a frond-end
+      developer.
+    </p>
+    <h3>About me:</h3>
+    <p class="intro">
+      I graduated in French Studies but I quickly moved into IT starting my first job as a Servicedesk Agent, then
+      Windows Administrator, and finally Tools Developer. Now I'm learning HTML, CSS, and JavaScript with the itention
+      of creating webpages, especially their front side.
+    </p>
+  </div>
+  <div class="bottom-container">
+    <a href="https://pl.linkedin.com/in/jan-ciszak-ba9224190">LinkedIn</a>
+    <p>
+      © Jan Ciszak
+    </p>
+</body>
+
 </html>
